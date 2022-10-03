@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Dtos\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DesafioAPI.Domain.Core\DesafioAPI.Domain.Core.csproj" />
+    <ProjectReference Include="..\DesafioAPI.Domain\DesafioAPI.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
