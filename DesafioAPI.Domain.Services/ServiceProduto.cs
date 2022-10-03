@@ -1,5 +1,6 @@
 ﻿using DesafioAPI.Domain.Core.Interfaces.Repository;
 using DesafioAPI.Domain.Core.Interfaces.Service;
+using System;
 using System.Collections.Generic;
 
 namespace DesafioAPI.Domain.Services
@@ -20,12 +21,12 @@ namespace DesafioAPI.Domain.Services
 
         public void Update(Produto produto)
         {
-           repository.Update(produto);
+            repository.Update(produto);
         }
 
         public void Remove(Produto produto)
         {
-            repository.Remove(produto);
+            repository.Update(produto);
         }
 
         public IEnumerable<Produto> GetAll()

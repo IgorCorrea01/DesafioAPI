@@ -32,7 +32,7 @@ namespace DesafioAPI.Infrastructure.Data.Repository
         {
             try
             {
-                sqlContext.Entry(produto).State = EntityState.Modified;
+                sqlContext.Set<Produto>().Update(produto);
                 sqlContext.SaveChanges();
             }
             catch (Exception ex)
@@ -45,7 +45,8 @@ namespace DesafioAPI.Infrastructure.Data.Repository
         {
             try
             {
-                sqlContext.Set<Produto>().Remove(produto);
+
+                sqlContext.Set<Produto>().Update(produto);
                 sqlContext.SaveChanges();
             }
             catch (Exception ex)
